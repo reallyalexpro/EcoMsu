@@ -1,0 +1,795 @@
+@import "/workspace/fonts/stylesheet.css";
+
+/******* Structure *******/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix {	clear: both; width: 0; height: 0; overflow: hidden;	font-size: 0; }
+
+a:active {  background-color: inherit; }
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Arial;
+	font-size: 12px; 
+	color: #2c2c2c;
+	background-color: white;
+}
+
+#layer {
+	background: url(/workspace/images/top.png);
+	height: 92px;
+	text-align: center;
+}
+#top {
+	width: 980px;
+	margin: 0 auto;	
+	height: 92px;
+	text-align: left;
+	line-height: 92px;	
+	border: 0px solid red;
+	position: relative;
+}
+#top .logo {
+	font-family: 'daxline-black';
+	text-decoration: none;
+	color: #2e2d24;
+	line-height: 20px;
+	text-align: center;		
+	/*display: inline-block;*/	
+	vertical-align: middle;
+	position: absolute;
+	top: 22px;
+	left: 0;
+}
+#top .logo a {
+	line-height: 20px;
+	text-decoration: none;
+	color: #2e2d24;
+	font-size: 18px;
+}
+#top .phones, #footer .phones {
+	display: inline-block;	
+	position: absolute;		
+	top: 0px;
+	left: 527px;	
+	line-height: 20px;	
+}
+#footer .phones {
+	display: table;	
+	position: relative;		
+	top: auto;
+	left: auto;	
+	margin: 0;
+}
+#top .phones th, #footer .phones th {
+	color: #222222;	
+	padding: 22px 0 5px 0;
+}
+#top .phones td, #footer .phones td {
+	color: white;
+	font-family: 'daxline-thin';
+	font-size: 18px!important;	
+	padding: 0 32px 22px 0;
+}
+#footer .phones th, #footer .phones td  {
+	color: #c6c6c6;	
+}
+#top .lang {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border: 0px solid red;
+	line-height: 68px;
+}
+#top .lang a {
+	color: #222222;
+	font-family: 'daxline-thin';
+	font-size: 18px;	
+	margin-right: 8px;
+}
+#top .lang a.current {
+	color: white;
+}
+.menu {
+	
+}
+.menu .up {		
+	background: url(/workspace/images/menu-top-bg.jpg) center top no-repeat;
+	text-align: center;
+	font-size: 0;
+}
+.menu ul {	
+	display: inline-block;	
+	margin: 0 auto;
+	width: 980px;
+	text-align: left;		
+}
+.menu ul li {
+	display: block;
+	float: left;	
+	background: url(/workspace/images/menu-div.gif) left bottom no-repeat;		
+	position: relative;
+}
+.menu ul li a {
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	color: #2e2d24;
+	font-family: 'daxline-light';
+	font-size: 15px;
+	text-decoration: none;
+	/*padding: 0 30px;*/
+	text-align: center;
+}
+.menu ul li a:hover, .menu ul li.current a {	
+	background: url(/workspace/images/menu-hover.png) top left;
+}
+.menu .up ul li.pos1 a {
+	width: 100px;
+}
+.menu .up  ul li.pos2 a {
+	width: 145px;
+}
+.menu .up  ul li.pos3 a {
+	width: 145px;
+}
+.menu .up  ul li.pos4 a {
+	width: 145px;
+}
+.menu .up  ul li.pos5 a {
+	width: 160px;
+}
+.menu .up  ul li.pos6 a {
+	width: 283px;
+}
+.menu .down {		
+	background: url(/workspace/images/menu-bottom-bg.jpg) center top no-repeat;
+	text-align: center;
+	font-size: 0;
+}
+.menu .down ul li.pos1 a {
+	width: 166px;
+}
+.menu .down  ul li.pos2 a {
+	width: 166px;
+}
+.menu .down  ul li.pos3 a {
+	width: 161px;
+}
+.menu .down  ul li.pos4 a {
+	width: 183px;
+}
+.menu .down  ul li.pos5 a {
+	width: 161px;
+}
+.menu .down  ul li.pos6 a {
+	width: 142px;
+}
+.menu ul.level2 {	
+			
+}
+.menu ul.level2 li {
+	background: none;		
+}
+.menu ul.level2 li a {
+	font-family: Arial;
+	font-size: 13px;
+	color: white;
+	text-decoration: underline;
+	height: 39px;
+	line-height: 39px;
+	background: url(/workspace/images/bullet.png) left center no-repeat;
+	padding-left: 12px;
+	margin-right: 12px;
+}
+.menu ul.level2 li a:hover, .menu ul.level2 li.current a {
+	color: #00aeef;
+	background: url(/workspace/images/bullet-a.png) left center no-repeat;
+}
+.menu .arrow {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(/workspace/images/menu-arrow.png);
+	width: 10px;
+	height: 5px;
+}
+.scroll {
+	background: url(/workspace/images/scroller-bg.jpg) top center no-repeat;
+	height: 444px;
+	text-align: center;
+	padding-top: 8px;
+}
+.scroll .nav-panel {
+	background: url(/workspace/images/nav-panel-bg.png) top center no-repeat;
+	width: 960px;
+	height: 40px;	 
+	position: absolute;
+	left: 0;
+	bottom: 6px;	
+}
+.scrollable {  
+	position: relative;
+	overflow: hidden;
+	width: 960px;
+	height: 436px;
+	margin: 0 auto;	
+}
+.scrollable .items { 
+  width: 20000em;
+  position: absolute;
+}
+.scrollable .items div {
+	float: left;
+}
+.scrollable .navi {    
+	display: inline-block;	    
+    height: 24px;
+	margin: 9px 30px 0 30px;
+}
+.scrollable .navi a {
+    width: 12px;
+    height: 12px;
+    float: left;
+	margin: 5px 3px 0 3px;
+    background: url(/workspace/images/navi.png) center center no-repeat;
+    display: block;
+    font-size: 1px;
+cursor: pointer;	
+}
+.scrollable .navi a.active, scrollable .navi a.active:hover {
+    background: url(/workspace/images/navi-a.png) center center no-repeat!important;
+}
+.scrollable .navi a:hover {
+    background: url(/workspace/images/navi-h.png) center center no-repeat;
+}
+.scrollable a.browse {
+    background: url(/workspace/images/arrows.png) no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1px;
+    height: 24px;
+    margin: 0px 0px;
+    width: 19px;		
+}
+.scrollable a.right {
+    background-position: -57px 0;    
+    margin-right: 0;
+}
+.scrollable a.right:hover {
+    background-position: -19px 0px;
+}
+.scrollable a.right:active {
+    background-position: -19px 0px;
+}
+.scrollable a.left {
+	background-position: -38px 0;
+    margin-left: 0;
+}
+.scrollable a.left:hover {
+    background-position: 0 0;
+}
+.scrollable a.left:active {
+    background-position: 0 0;
+}
+.scrollable .nav-panel #sites {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	color: #c6c6c6;
+}
+.scrollable .nav-panel #sites select {
+	font-size: 14px;
+	color: #3d3f48;
+	width: 190px;
+	height: 23px;
+	margin-left: 7px;
+}
+.topnews {
+	background: url(/workspace/images/top-news-bg.png) repeat-y top center;
+	/*height: 307px;*/
+	margin-top: -8px;
+	text-align: center;
+	position: relative;
+}
+.topnews:after {
+	content: ""; 
+	position: absolute; 		
+	left: 0;
+	width: 100%;
+	bottom: -5px;
+	height: 5px; 
+	background: url(/workspace/images/top-news-shadow.png) no-repeat center top; 
+	border: 0px solid red;
+}
+.topnews-container {
+	width: 980px;
+	margin: 0 auto;	
+}
+.topnews table {
+	width: 100%;
+}
+.topnews table td {
+	width: 33%;
+	text-align: left;
+	padding: 27px 36px 10px 36px;
+	vertical-align: top;
+}
+.topnews .header {
+	background: url(/workspace/images/top-news-header-line.png) repeat-x bottom left;		
+	padding: 0 0 14px 0;
+	margin-bottom: 3px;
+}
+.topnews .header h1 {
+	display: inline;
+	font-family: 'daxline-thin';
+	font-size: 25px;
+	color: white;
+}
+.topnews .header a {
+	color: white;
+	line-height: 25px;
+	float: right;
+	margin-top: 4px;
+	background: url(/workspace/images/top-new-link-arrow.gif) no-repeat left center;		
+	padding-left: 15px;
+}
+.article {
+	clear: both;
+	margin: 0;	
+	background: url(/workspace/images/article-line.png) bottom left repeat-x;	
+	padding: 12px 0 12px 0;
+}
+.articles .article {
+	background: none;
+}
+.article.last, .topnews .photo-link.last, .topnews .faq-link.last {
+	background: none;
+}
+.article img {		
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 2px;
+	width: 80px;
+	height: 80px;		
+}
+.articles .article img {
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+	margin: 0 12px 12px 0;
+}
+.article .date {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.articles .article .date {
+	color: inherit;		
+}
+.article a {
+	line-height: 13px;
+	color: white;		
+}
+.articles .article a {
+	font-size: 120%;
+	line-height: auto;
+	color: inherit;		
+}
+.article a:hover, .topnews .photo-link:hover, .topnews .faq-link:hover, .topnews .header a:hover {
+	color: #8ab21e;
+}
+.article a.shadow {
+	width: 84px;
+	height: 84px;
+	background: url(/workspace/images/news-photo-bg.png) no-repeat left top;
+	display: block;
+	float: left;
+	position: relative;
+	margin: 0 7px 0 0;
+}
+.article a.shadow.noimage {
+	background: none;	
+}
+.articles .article .short, .articles .article .count {
+	margin-top: 1em;
+	color: #666666;
+	font-size: 90%;
+}
+.pagination {
+	display: block;
+	margin: 1em 0 2em 0;
+	float: left;
+}
+.pagination li {
+	float: left;
+	margin: 0 1em 0 0;
+}
+.pagination li a {
+	font-size: 1.2em;
+	text-decoration: none;	
+	padding: 2px 6px;	
+	color: black;
+}
+.pagination li.selected a {
+	background-color: #3d3f48;	
+	color: white;
+}
+.pagination li.disabled a {
+	color: silver;
+}
+.pagination li a.pagination-previous, .pagination li a.pagination-next {
+	background: none;
+}
+
+.hr {
+	height: 1px;
+	display: block;
+	border-top: 1px solid #d5d5d5;
+	margin: 1em 0;
+}
+.topnews .photo-link, .topnews .faq-link {
+	color: white;
+	display: block;
+	background: url(/workspace/images/article-line.png) bottom left repeat-x;
+	padding: 8px 0 9px 0;
+}
+.topnews .faq-link {
+	text-decoration: none;
+}
+.content {
+	width: 980px;
+	margin: 0 auto;
+}
+.content-left {
+	padding: 0 20px 0 0;
+	text-align: left;
+	vertical-align: top;
+}
+.content-left h1 {
+	position: relative;		
+	text-align: left;
+	margin: 30px 0 20px 0;
+	background: url(/workspace/images/content-header-line.png) left 24px repeat-x;	
+}
+.content-left h1 span {
+	font-family: 'daxline-thin';
+	font-size: 25px;
+	color: #393b44;
+	background-color: white;
+	padding-right: 17px;
+}
+.inner .content-left h1 {
+	/*margin: 0px 0 20px 0;*/
+}
+.content-right {
+	width: 323px;
+	background: url(/workspace/images/content-right-bg.png);
+	vertical-align: top;
+	padding: 0px 0px 20px 0px;
+	text-align: left;	
+	height: 500px;
+}
+.content-right a {
+	color: #2c2c2c;
+}
+.content-right h2.title {	
+	font-family: 'daxline-bold';
+	font-size: 20px;
+	border-bottom: 1px solid #c3c3c3;
+	padding-bottom: 5px;
+	margin: 40px 20px 0 20px;
+}
+.content-right .conference, .content-right .publication {
+	background: url(/workspace/images/conferences-div.png) bottom left repeat-x;
+	padding: 15px 0;
+	line-height: 17px;	
+	margin: 0px 20px 0px 20px;
+}
+.content-right .conference a {
+	text-decoration: none;
+}
+.content-right .conference .date {
+	background: url(/workspace/images/calendar-icon.png) left center no-repeat;
+	padding-left: 20px;
+}
+.congratulations {
+	clear: both;
+}
+.congratulation {
+	width: 298px;
+	height: 280px;
+	float: right;
+	clear: none;
+	position: relative;
+}
+.congratulation.first {
+	float: left;
+}
+.congratulation a {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	color: white;	
+	text-align: left;
+	padding: 15px 20px 20px 20px;
+	line-height: 17px;
+	text-decoration: none;
+	min-height: 35%;
+	overflow-y: hidden;
+	background: #779a1a url(/workspace/images/congratulation-corner.png) right bottom no-repeat;
+}
+.congratulation a:hover {
+	background: #779a1a url(/workspace/images/congratulation-corner-a.png) right bottom no-repeat;
+}
+.congratulation a:first-line {
+	font-family: 'daxline-thin';
+	font-size: 25px;
+	line-height: 32px;
+}
+.events {
+	width: 100%;
+	margin-top: -26px;
+} 
+.event {
+	text-align: left;
+}
+.event, .calendar {
+	border-bottom: 1px solid #d5d5d5;
+	padding: 22px 0 20px 20px;
+	vertical-align: top;
+	width: 50%;
+}
+.events tr td.event:first-child {
+	border-right: 1px solid #d5d5d5;
+	padding: 22px 20px 20px 0;
+}
+.event .title {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #779a1a;
+	text-decoration: none;
+	margin: 1em 0;
+}
+.event .title.noimage {
+	margin: 0 0 1em 0;
+}
+.event .more {
+	margin-top: 1em;
+}
+.event .more a {	
+	background-color: #393b44;
+	color: white;
+	text-decoration: none;
+	padding: 3px 10px;	
+}
+.event .more a:hover {
+	background-color: #779a1a;
+}
+.showmore {
+	padding: 20px 0;
+	text-align: center;
+}
+.showmore a {
+	font-family: 'daxline-thin';
+	font-size: 16px;
+	background-color: #779a1a;
+	color: white;
+	text-decoration: none;
+	padding: 4px 12px;	
+}
+#datepicker {
+	/*width: 99%;*/
+	/*border-top: 2px solid #d4d4d4;*/
+	/*border-left: 2px solid #d4d4d4;
+	border-right: 2px solid #d4d4d4;*/
+	background: url(/workspace/images/calendar-bottom.png) bottom center no-repeat;	
+}
+.calendar .ui-datepicker-header {
+	background-color: #31333b;
+}
+.ui-datepicker-calendar {
+	padding: 0;
+	font-size: 1px;
+}
+.ui-datepicker-calendar th, .ui-datepicker-calendar td {
+	width: 40px;	
+}
+.ui-datepicker-calendar td {	
+	border: 1px solid #e2e2e2;
+	font-weight: bold;
+}
+
+a.ui-state-default {
+	font-weight: bold!important;
+}
+.ui-datepicker-title {
+	font-weight: normal;
+}
+#footer {
+	background: url(/workspace/images/footer-bg.png) bottom center repeat-x;	
+	height: 163px;
+	margin: 0;
+}
+#footer .top {
+	display: block;
+	width: 980px;
+	height: 78px;
+	margin: 0px auto;		
+	border: 0px solid red;
+	position: relative;						
+}
+#footer .top .menu {
+	position: absolute;
+	top: 11px;
+	left: 0;
+	display: block;	
+	border: 0px solid blue;						
+}
+#footer .top .menu li {
+	display: inline;
+	margin: 9px 20px 0px 20px;	
+}
+#footer .top .menu li a {	
+	color: white;
+	font-size: 15px;
+	font-family: 'daxline-light';
+	text-decoration: none;
+	line-height: 26px;	
+}
+#footer .top .menu li a:hover {
+	color: #393b44;
+}
+#footer .bottom {
+	width: 980px;
+	height: 84px;
+	margin: 0px auto;
+	overflow-y: hidden;
+}
+#footer .bottom table {
+	
+}
+#footer .bottom td {
+	text-align: left;
+	color: white;
+	padding-right: 40px;
+	font-size: 11px;
+}
+.document {
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 2em;
+}
+.document h2.title, .gallery h2.title {
+	font-size: 22px;
+	margin-bottom: 0.5em;
+	line-height: 25px;
+}
+.document p {
+	/*text-indent: 2em;*/
+}
+.document p, .document ul, .document ol {
+	margin: 0.5em 0;
+}
+.document ul li {
+	margin: 0.5em 0 0.5em 1.5em;
+	list-style-type: disc;	
+	padding: 0 0 0 5px;
+}
+.document ol li {
+	margin: 0.5em 0 0.5em 2em;
+	padding: 0;
+	list-style-type: decimal;	
+}
+.document table, .document th, .document td {
+	border-collapse: collapse;
+	border: 0;
+}
+.document table th, .document table td {
+	padding: 4px;	
+	color: black;
+}
+.document table th {
+	font-size: 14px;
+}
+.document table td {
+	font-size: 12px;
+	border: 1px solid #b2b2b2;
+}
+.document a {
+	color: #81a625;
+}
+.document strong {
+	font-weight: bold;
+}
+.document em {
+	font-style: italic;
+}
+.document img.attached {
+	float: left;
+	margin: 0.3em 1.7em 1em 0;
+}
+.document .date, .gallery .date {
+	color: silver;
+}
+.gallery {	
+}
+.gallery .photo-list {	
+	margin: 1em 0 0 0;		
+}
+.gallery .photo-list li {
+	float: left;
+}
+.gallery .photo-list li img {
+	margin-bottom: 12px;
+}
+.gallery .photo-list li.odd img {
+	margin-right: 12px;
+}
+.graduates h2.title {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin:  1em 0 0.5em 0;
+	clear: both;
+}
+.graduates .graduate {
+	width: 150px;
+	height: 240px;
+	float: left;
+}
+.allstaff .staff {
+	display: block;	
+	clear: both;
+}
+.allstaff .staff img, .position img {
+	float: left;
+	clear: none;
+	margin: 0 10px 10px 0;
+}
+.allstaff .staff a {
+	text-decoration: none;	
+	display: block;
+}
+.allstaff .staff .name {
+	display: block;
+	font-weight: bold;
+	font-size: 110%;
+	color: black;	
+}
+.allstaff .staff a.nophoto {
+	padding: 1em 0 0 150px;
+	margin: 0 0 2em 0;
+}
+.position .name {
+	display: block;
+	font-weight: bold;
+	font-size: 22px;
+	color: black;	
+	margin-bottom: 0.3em;
+}
+.allstaff .staff .position, .position .position {
+	display: inline;	
+	color: #666666;	
+}
+.position .position {
+	font-weight: bold;
+	font-size: 14px;
+}
+.position {
+	margin-bottom: 30px;
+}
+.position p {
+	margin: .5em 0;
+}

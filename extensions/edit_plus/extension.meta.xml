@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="edit_plus" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Edit Plus</name>
+	<description>Code editing with line numbers and syntax highlighting.</description>
+	<repo type="github">https://github.com/Petertron/edit_plus</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/96949</url>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="Petertron" symphony="Petertron">Peter Skirenko</name>
+			<website>http://www.peter-s.me</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.4.1" data="2013-03-18" min="2.3">
+			- CDATA tags are now displayed the right way.
+		</release>
+		<release version="0.4.0" date="2013-03-15" min="2.3">
+			- A significant rewrite which abandons the use of a content-editable div. Input now goes to a hidden text area.
+			- It is now possible to paste text from outside the editor into the editor.
+		</release>
+		<release version="0.3.1" date="2013-02-21" min="2.3">
+			- Copy/cut/paste handler rewritten for the sake of Macintosh compatability.
+			- Text drag/drop temporarily disabled.
+		</release>
+		<release version="0.3" date="2013-02-11" min="2.3">
+			- Opera problems fixed.
+			- Colour scheme improved.
+		</release>
+		<release version="0.2" date="2013-02-06" min="2.3">
+			- Line numbers added.
+		</release>
+		<release version="0.1" date="2013-01-26" min="2.3"/>
+	</releases>
+</extension> 

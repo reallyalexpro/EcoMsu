@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'daxline-black';
+    src: url('daxlinecyrlf-black-webfont.eot');
+    src: url('daxlinecyrlf-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('daxlinecyrlf-black-webfont.woff') format('woff'),
+         url('daxlinecyrlf-black-webfont.ttf') format('truetype'),
+         url('daxlinecyrlf-black-webfont.svg#daxlinecyrlf-blackblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daxline-light';
+    src: url('daxlinecyrlf-light-webfont.eot');
+    src: url('daxlinecyrlf-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('daxlinecyrlf-light-webfont.woff') format('woff'),
+         url('daxlinecyrlf-light-webfont.ttf') format('truetype'),
+         url('daxlinecyrlf-light-webfont.svg#daxlinecyrlf-lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daxline-thin';
+    src: url('daxlinecyrlf-thin-webfont.eot');
+    src: url('daxlinecyrlf-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('daxlinecyrlf-thin-webfont.woff') format('woff'),
+         url('daxlinecyrlf-thin-webfont.ttf') format('truetype'),
+         url('daxlinecyrlf-thin-webfont.svg#daxlinecyrlf-thinthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'daxline-bold';
+    src: url('daxlinecyrlf-bold-webfont.eot');
+    src: url('daxlinecyrlf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('daxlinecyrlf-bold-webfont.woff') format('woff'),
+         url('daxlinecyrlf-bold-webfont.ttf') format('truetype'),
+         url('daxlinecyrlf-bold-webfont.svg#daxlinecyrlf-boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

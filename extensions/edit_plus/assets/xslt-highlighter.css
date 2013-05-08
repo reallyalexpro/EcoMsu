@@ -1,0 +1,12 @@
+.XSLT_xml_dec {color: #885820}
+.XSLT_attr_name {color: #024C78}
+.XSLT_xsl_tag {color: #007005}
+.XSLT_xsl_attr_val, .XSLT_xsl_in_attr_val {color: #460480}
+.XSLT_xsl_variable {color: #3A0480; font-style: italic}
+.XSLT_comment {color: #585858}
+.XSLT_xml_tag {color: #065002}
+.XSLT_html_tag {color: #020678}
+.XSLT_attr_val, .XSLT_string_in_xsl_attr_val {color: #901603}
+.XSLT_number_in_xsl_attr_val {color: #B85004}
+.XSLT_text, .XSLT_cdata {color: #0C0C0C}
+.XSLT_amp {color: #9A7004}
